@@ -26,7 +26,7 @@ import asyncio
 from dotenv import load_dotenv,find_dotenv
 load_dotenv(find_dotenv())
 
-from misc.allDoc_Prompts4 import *
+from prompts.allDoc_Prompts4 import *
 # from azure.identity import DefaultAzureCredential, ManagedIdentityCredential
 # from azure.keyvault.secrets import SecretClient
 
