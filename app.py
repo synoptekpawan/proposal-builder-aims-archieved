@@ -2,7 +2,7 @@ import yaml
 import streamlit_authenticator as stauth
 import streamlit as st
 from streamlit_option_menu import option_menu
-from src.generate_proposal_3 import generate_proposal
+from src.generate_proposal4 import generate_proposal
 from streamlit_extras.app_logo import add_logo
 import base64
 from yaml.loader import SafeLoader
