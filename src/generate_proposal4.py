@@ -46,7 +46,7 @@ engine = "gpt-35-instruct"
 # Azure AI Search setup
 search_endpoint = "https://cogs-aims.search.windows.net"; # Add your Azure AI Search endpoint here
 search_key = os.getenv("SEARCH_KEY") # Add your Azure AI Search admin key here
-search_index_name = "try-index-py-aims-5"; # Add your Azure AI Search index name here
+search_index_name = "try-index-py-aims-4"; # Add your Azure AI Search index name here
 
 
 # design system prompt here
