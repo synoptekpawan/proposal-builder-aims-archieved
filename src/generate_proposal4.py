@@ -156,20 +156,20 @@ def generate_proposal():
         
         # for costs and timeline table configurations
         st.write('Add costs here')
-        cost_df = pd.DataFrame(columns=['Service_Names','Quantities','MRR',
-                                   'Extended_MRR'])
+        cost_df = pd.DataFrame(columns=['Service_Names','Hours','Rates',
+                                   'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Quantities' : st.column_config.NumberColumn('Quantities', min_value=0, max_value=10),
-                    'MRR' : st.column_config.NumberColumn('MRR in $'),
-                    'Extended_MRR' : st.column_config.NumberColumn('Extended MRR in $')
+                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Rates' : st.column_config.NumberColumn('Rates in $'),
+                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
         costs.drop_duplicates(inplace=True, ignore_index=True)
         nd_array_costs = costs.to_dict(orient='records')
-        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Quantities': 'Quantities',
-                                  'MRR': 'MRR', 'Extended_MRR':'Extended_MRR'})
+        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Hours': 'Hours',
+                                  'Rates': 'Rates', 'Total_Rates':'Total_Rates'})
 
         st.write('Add Time Lines here')
         timeline_df = pd.DataFrame(columns=['Objectives','Weeks'])
@@ -342,20 +342,20 @@ def generate_proposal():
         
         # for costs and timeline table configurations
         st.write('Add costs here')
-        cost_df = pd.DataFrame(columns=['Service_Names','Quantities','MRR',
-                                   'Extended_MRR'])
+        cost_df = pd.DataFrame(columns=['Service_Names','Hours','Rates',
+                                   'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Quantities' : st.column_config.NumberColumn('Quantities', min_value=0, max_value=10),
-                    'MRR' : st.column_config.NumberColumn('MRR in $'),
-                    'Extended_MRR' : st.column_config.NumberColumn('Extended MRR in $')
+                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Rates' : st.column_config.NumberColumn('Rates in $'),
+                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
         costs.drop_duplicates(inplace=True, ignore_index=True)
         nd_array_costs = costs.to_dict(orient='records')
-        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Quantities': 'Quantities',
-                                  'MRR': 'MRR', 'Extended_MRR':'Extended_MRR'})
+        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Hours': 'Hours',
+                                  'Rates': 'Rates', 'Total_Rates':'Total_Rates'})
 
         st.write('Add Time Lines here')
         timeline_df = pd.DataFrame(columns=['Objectives','Weeks'])
@@ -528,20 +528,20 @@ def generate_proposal():
         
         # for costs and timeline table configurations
         st.write('Add costs here')
-        cost_df = pd.DataFrame(columns=['Service_Names','Quantities','MRR',
-                                   'Extended_MRR'])
+        cost_df = pd.DataFrame(columns=['Service_Names','Hours','Rates',
+                                   'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Quantities' : st.column_config.NumberColumn('Quantities', min_value=0, max_value=10),
-                    'MRR' : st.column_config.NumberColumn('MRR in $'),
-                    'Extended_MRR' : st.column_config.NumberColumn('Extended MRR in $')
+                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Rates' : st.column_config.NumberColumn('Rates in $'),
+                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
         costs.drop_duplicates(inplace=True, ignore_index=True)
         nd_array_costs = costs.to_dict(orient='records')
-        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Quantities': 'Quantities',
-                                  'MRR': 'MRR', 'Extended_MRR':'Extended_MRR'})
+        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Hours': 'Hours',
+                                  'Rates': 'Rates', 'Total_Rates':'Total_Rates'})
 
         st.write('Add Time Lines here')
         timeline_df = pd.DataFrame(columns=['Objectives','Weeks'])
@@ -714,20 +714,20 @@ def generate_proposal():
         
         # for costs and timeline table configurations
         st.write('Add costs here')
-        cost_df = pd.DataFrame(columns=['Service_Names','Quantities','MRR',
-                                   'Extended_MRR'])
+        cost_df = pd.DataFrame(columns=['Service_Names','Hours','Rates',
+                                   'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Quantities' : st.column_config.NumberColumn('Quantities', min_value=0, max_value=10),
-                    'MRR' : st.column_config.NumberColumn('MRR in $'),
-                    'Extended_MRR' : st.column_config.NumberColumn('Extended MRR in $')
+                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Rates' : st.column_config.NumberColumn('Rates in $'),
+                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
         costs.drop_duplicates(inplace=True, ignore_index=True)
         nd_array_costs = costs.to_dict(orient='records')
-        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Quantities': 'Quantities',
-                                  'MRR': 'MRR', 'Extended_MRR':'Extended_MRR'})
+        nd_array_costs.insert(0, {'Service_Names': 'Service_Names','Hours': 'Hours',
+                                  'Rates': 'Rates', 'Total_Rates':'Total_Rates'})
 
         st.write('Add Time Lines here')
         timeline_df = pd.DataFrame(columns=['Objectives','Weeks'])
