@@ -329,7 +329,7 @@ def generate_proposal():
                 approach = st.text_input("What should be the scope for the doc? ", key='approach0')
                 
                 tech = st.text_input('What tech stack to be included?', key='tech0') # 'Request',
-                clientOrg = st.text_input("What is the client orgnisation name?", key='clientOrg0')
+                clientOrg = st.text_input("What is the client organization name?", key='clientOrg0')
                 timeLine = st.text_input("How much is the tentative project duration in weeks?",key='timeLine0')
                 mspOrg = "SYNOPTEK"
 
@@ -515,7 +515,7 @@ def generate_proposal():
                 approach = st.text_input("What should be the scope for the doc? ", key='approach0')
                 
                 tech = st.text_input('What tech stack to be included?', key='tech0') # 'Request',
-                clientOrg = st.text_input("What is the client orgnisation name?", key='clientOrg0')
+                clientOrg = st.text_input("What is the client organization name?", key='clientOrg0')
                 timeLine = st.text_input("How much is the tentative project duration in weeks?",key='timeLine0')
                 mspOrg = "SYNOPTEK"
 
@@ -701,7 +701,7 @@ def generate_proposal():
                 approach = st.text_input("What should be the scope for the doc? ", key='approach0')
                 
                 tech = st.text_input('What tech stack to be included?', key='tech0') # 'Request',
-                clientOrg = st.text_input("What is the client orgnisation name?", key='clientOrg0')
+                clientOrg = st.text_input("What is the client organization name?", key='clientOrg0')
                 timeLine = st.text_input("How much is the tentative project duration in weeks?",key='timeLine0')
                 mspOrg = "SYNOPTEK"
 
