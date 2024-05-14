@@ -160,9 +160,9 @@ def generate_proposal():
                                    'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Hours' : st.column_config.NumberColumn('Hours'),
                     'Rates' : st.column_config.NumberColumn('Rates in $'),
-                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
+                    'Total_Rates' : st.column_config.NumberColumn('Total Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
@@ -346,9 +346,9 @@ def generate_proposal():
                                    'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Hours' : st.column_config.NumberColumn('Hours'),
                     'Rates' : st.column_config.NumberColumn('Rates in $'),
-                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
+                    'Total_Rates' : st.column_config.NumberColumn('Total Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
@@ -532,9 +532,9 @@ def generate_proposal():
                                    'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Hours' : st.column_config.NumberColumn('Hours'),
                     'Rates' : st.column_config.NumberColumn('Rates in $'),
-                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
+                    'Total_Rates' : st.column_config.NumberColumn('Total Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
@@ -718,9 +718,9 @@ def generate_proposal():
                                    'Total_Rates'])
         cost_config = {
                     'Service_Names' : st.column_config.TextColumn('Service Names (required)', width='large', required=True),
-                    'Hours' : st.column_config.NumberColumn('Hours', min_value=0, max_value=10),
+                    'Hours' : st.column_config.NumberColumn('Hours'),
                     'Rates' : st.column_config.NumberColumn('Rates in $'),
-                    'Total_Rates' : st.column_config.NumberColumn('Extended Rates in $')
+                    'Total_Rates' : st.column_config.NumberColumn('Total Rates in $')
                 }
         
         costs = st.data_editor(cost_df, column_config = cost_config, num_rows='dynamic')
